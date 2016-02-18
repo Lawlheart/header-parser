@@ -9,8 +9,14 @@ module.exports = function (app) {
 
   app.route('/api/whoami')
     .get(function(req, res) {
-      console.log(req.headers)
-      res.json(req.headers)
+      res.json({
+        ipaddress: (req.headers['x-forwarded-for'] || 
+                    req.connection.remoteAddress || 
+                    req.socket.remoteAddress ||
+                    req.connection.socket.remoteAddress ),
+        language: req.headers['accept-language'].split(",")[0],
+        software: req.headers['user-agent'].split(/[)(]/g)[1]
+      })
     });
 
 };
