@@ -3,14 +3,6 @@
   "version": "0.0.0",
   "description": "Header parser built as part of the FreeCodeCamp curriculum.",
   "main": "server.js",
-  "scripts": {
-    "start": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LawlietBlack/header-parser"
-  },
-  "homepage": "http://header-parser-lawlietblack.herokuapp.com",
   "keywords": [
     "MEAN",
     "MongoDB",
@@ -19,6 +11,14 @@
     "Node",
     "javascript"
   ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LawlietBlack/header-parser"
+  },
+  "homepage": "http://header-parser-lawlietblack.herokuapp.com",
   "author": "Kenneth Black",
   "dependencies": {
     "express": "^4.13.3",
