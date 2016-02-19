@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-
 <html>
+<head>
+   <title>Header Parser</title>
+   <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <header>
+      <p>Welcome to my Header Parser!</p>
+   </header>
 
-   <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
-      <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
-      <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
-   </head>
+   <main class="container">
+      <h4>User Stories</h4>
+      <ul>
+         <li>I can get the IP address, language and operating system for my browser.</li>
+      </ul>
+      <h4>Example Usage</h4>
+      <ul>
+         <li><code>https://header-parser-lawlietblack.herokuapp.com/api/whoami</code></li>
+      </ul>
+      <h4>Example Output</h4>
+      <ul>
+         <li><code>{ ipaddress: "55.55.55.555, language: "en-US", software: "Windows NT 10.0; WOW64" }</code></li>
+      </ul>
+   </main>
 
-   <body>
-      <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
+   <footer>
+      <p class="sig-text">Code by <a href="http://lawlietblack.com">Kenneth Black</a></p>
+      <p class="clementine-text">Powered by Clementine.js<img src="/public/img/clementine_150.png" /></p>
+   </footer>
 
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
-         </div>
-      </div>
- 
-   </body>
-
+</body>
 </html>
