@@ -21,6 +21,7 @@
   "homepage": "http://header-parser-lawlietblack.herokuapp.com",
   "author": "Kenneth Black",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "mongodb": "^2.0.42"
   }

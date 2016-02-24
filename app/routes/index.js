@@ -1,5 +1,7 @@
 'use strict';
 
+var cors = require('cors');
+
 module.exports = function (app) {
 
   app.route('/')
@@ -8,7 +10,7 @@ module.exports = function (app) {
     });
 
   app.route('/api/whoami')
-    .get(function(req, res) {
+    .get(cors(), function(req, res) {
       res.json({
         ipaddress: (req.headers['x-forwarded-for'] || 
                     req.connection.remoteAddress || 
